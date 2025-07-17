@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: guestbook
+  template:
+    metadata:
+      labels:
+        app: guestbook
+        env: prod
+    spec:
+      containers:
+        - name: guestbook
+          image: nginx:1.19
+          ports:
+            - containerPort: 80
+
