@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: guestbook
-          image: nginx:1.21
+          image: nginx:1.21.6
           ports:
             - containerPort: 80
 
