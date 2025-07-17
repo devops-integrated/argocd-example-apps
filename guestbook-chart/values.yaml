@@ -1,0 +1,5 @@
+image:
+  repository: nagadockeruser/guestbook
+  pullPolicy: Always
+  tag: "latest"
+
